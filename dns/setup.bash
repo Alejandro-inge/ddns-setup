@@ -16,7 +16,7 @@ apt install bind9 -y
 
 # Copy configuration files to /etc/bind/
 
-cp named* /etc/bind/
+cp ./dns/named* /etc/bind/
 
 # Change permissions and owners
 
@@ -25,7 +25,7 @@ chmod 640 /etc/bind/named*
 
 # Copy zones to /var/lib/bind
 
-cp zones/net* /var/lib/bind/
+cp ./dns/zones/net* /var/lib/bind/
 
 # Change permissions and owners
 

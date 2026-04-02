@@ -1,11 +1,11 @@
 zone "local.lan" IN {
     type master;
     file "/var/lib/bind/net.local.lan";
-    allow-update { key ddns-key; };
+    allow-update { key rndc-key; };
 };
 
 zone "2.0.10.in-addr.arpa" {
     type master;
     file "/var/lib/bind/net.local.lan.inverse";
-    allow-update { key ddns-key; };
+    allow-update { key rndc-key; };
 };

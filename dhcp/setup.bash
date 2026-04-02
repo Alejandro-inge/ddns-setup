@@ -10,7 +10,7 @@ apt install isc-dhcp-server -y
 
 # Copy the custom dhcpd.conf file to /etc/dhcp/
 
-cp ./dhcpd.conf /etc/dhcp/
+cp ./dhcp/dhcpd.conf /etc/dhcp/
 
 # Copy rndc.key content in dhcpd.conf
 
