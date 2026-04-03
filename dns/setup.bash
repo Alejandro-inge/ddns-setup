@@ -39,3 +39,7 @@ sleep 1s
 # watch bind9 Status
 
 systemctl status bind9
+
+# rndc loaded zones
+rndc zonestatus local.lan
+rndc zonestatus 4.0.10.in-addr.arpa
