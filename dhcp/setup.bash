@@ -14,8 +14,9 @@ cp ./dhcp/dhcpd.conf /etc/dhcp/
 
 # Copy rndc.key content in dhcpd.conf
 
-rndc=$( cat /etc/bind/rndc.key )
-sed -i "s/#rndc/$rndc/g" /etc/dhcp/dhcpd.conf
+export rndc=(cat /etc/bind/rndc.key)
+perl -pi -e 's/#rndc/$ENV{rndc}/g' /etc/dhcp/dhcpd.conf
+unset rndc
 
 # Restart dhcp service
 
