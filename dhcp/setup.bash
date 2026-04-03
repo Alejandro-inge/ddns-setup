@@ -1,3 +1,4 @@
+#!/bin/bash
 # Update ubuntu registries
 
 apt update
