@@ -4,7 +4,7 @@ zone "local.lan" IN {
     allow-update { key rndc-key; };
 };
 
-zone "2.0.10.in-addr.arpa" {
+zone "4.0.10.in-addr.arpa" {
     type master;
     file "/var/lib/bind/net.local.lan.inverse";
     allow-update { key rndc-key; };
