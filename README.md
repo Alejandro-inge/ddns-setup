@@ -3,8 +3,8 @@ This is an example of a DDNS configuration for a local network.
 
 ## Configurations
 
-- DHCP server for ddns support
-- DNS server for ddns support (reverse zones)
+- DHCP server with ddns support
+- DNS server with ddns support (reverse zones)
 
 ## Architecture
 
