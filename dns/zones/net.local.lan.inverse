@@ -9,4 +9,4 @@ $TTL 1D
         IN A 10.0.4.2
         ;
 @ IN NS ubuntu-dhcp.local.lan.
-2   IN  PTR ubuntu-dhcp.loca.lan.
+2   IN  PTR ubuntu-dhcp.local.lan.
