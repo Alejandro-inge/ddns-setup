@@ -12,7 +12,7 @@ cp ./dhcp/dhcpd.conf /etc/dhcp/
 
 # Copy rndc.key content in dhcpd.conf
 
-export rndc=(cat /etc/bind/rndc.key)
+export rndc=$(cat /etc/bind/rndc.key)
 perl -pi -e 's/#rndc/$ENV{rndc}/g' /etc/dhcp/dhcpd.conf
 unset rndc
 
