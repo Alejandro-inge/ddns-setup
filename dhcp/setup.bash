@@ -25,3 +25,7 @@ sleep 1s
 # Show the status
 
 systemctl status isc-dhcp-server
+
+# Validad dhcpd
+
+dhcpd -t
